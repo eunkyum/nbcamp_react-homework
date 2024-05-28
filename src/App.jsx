@@ -13,20 +13,22 @@ function App() {
     setCount(0);
   };
   return (
-    <div className="container">
-      <div>{count}</div>
-      <div className="button-container">
-        <button className="button" onClick={minusCount}>
-          -
-        </button>
-        <button className="button" onClick={resetCount}>
-          reset
-        </button>
-        <button className="button" onClick={addCount}>
-          +
-        </button>
+    <Fragment>
+      <div className="container">
+        <div>{count}</div>
+        <div className="button-container">
+          <button className="button" onClick={minusCount}>
+            -
+          </button>
+          <button className="button" onClick={resetCount}>
+            reset
+          </button>
+          <button className="button" onClick={addCount}>
+            +
+          </button>
+        </div>
       </div>
-    </div>
+    </Fragment>
   );
 }
 
